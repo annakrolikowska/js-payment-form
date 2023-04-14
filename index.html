@@ -4,29 +4,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <title>Payment form</title>
 </head>
 
 <body>
-  <section id="home-page">
+  <section id="home-page" class="home-page">
     <header>
-      <img class-name="home-page__logo" src="./assets/images/logo.png" alt="logo"/>
+      <img class="home-page__logo" src="./assets/images/logo.png" alt="logo"/>
     </header>
-    <div class-name="home-page__form-container">
-      <h2>Add your informations</h2>
-      <form class-name="home-page__form">
-        <input type="text" name="name" placeholder="Name on card">
-        <input name="card-number" placeholder="Card number">
-        <div class-name="home-page__inputs-container">
-          <input name="expiry-date" placeholder="Expiry date (MM/YY)">
-          <input name="CVV" placeholder="CVV">
-        <button class-name="home-page__button" type="submit">Next step</button>
+    <div class="home-page__form-container">
+      <h2>Add your <br> informations</h2>
+      <form class="home-page__form">
+        <div>
+          <label>
+            <input type="text" name="name"  placeholder="&nbsp;"> 
+            <span class="home-page__label">Name on card</span>
+          </label>
         </div>
+        <label>
+          <input name="card-number" placeholder="&nbsp;">
+          <span class="home-page__label">Card number</span>
+        </label>
+        <div class="home-page__inputs-container">
+          <label>
+            <input name="expiry-date" placeholder="&nbsp;">
+            <span class="home-page__label">Expiry date (MM/YY)</span>
+          </label>
+          <label>
+            <input name="CVV" placeholder="&nbsp;">
+            <span class="home-page__label">CVV</span>
+          </label>
+        </div>
+        <button class="home-page__button" type="submit">Next step</button>
       </form>
-  </div>
-  <div class-name="home-page__img-container">
-    <img class-name="home-page__img" src="./assets/images/photo-cards.png" alt="cards"/>
-  </div>
+    </div>
+    <div class="home-page__img-container">
+      <img class="home-page__img" src="./assets/images/photo-cards.png" alt="cards"/>
+    </div>
   </section>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
