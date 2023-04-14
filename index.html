@@ -3,26 +3,31 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
+  <title>Payment form</title>
 </head>
 
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
 <body>
-  <div id="home-page">
-    <div>
-      <img src="/assets/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
-      </div>
-    </div>
+  <section id="home-page">
+    <header>
+      <img class-name="home-page__logo" src="./assets/images/logo.png" alt="logo"/>
+    </header>
+    <div class-name="home-page__form-container">
+      <h2>Add your informations</h2>
+      <form class-name="home-page__form">
+        <input type="text" name="name" placeholder="Name on card">
+        <input name="card-number" placeholder="Card number">
+        <div class-name="home-page__inputs-container">
+          <input name="expiry-date" placeholder="Expiry date (MM/YY)">
+          <input name="CVV" placeholder="CVV">
+        <button class-name="home-page__button" type="submit">Next step</button>
+        </div>
+      </form>
   </div>
+  <div class-name="home-page__img-container">
+    <img class-name="home-page__img" src="./assets/images/photo-cards.png" alt="cards"/>
+  </div>
+  </section>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
   <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
