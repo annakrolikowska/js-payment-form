@@ -1,2 +1,103 @@
-/// Homepage Styles File
-/// Here we import all the Styles files we need for our Homepage.
+.home-page {
+    display: flex;
+    flex-direction: row;
+
+    & h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -0.03em;
+    }
+
+    & &__logo {
+        position: absolute;
+        padding: 64px;
+    }
+
+    & &__form-container {
+        padding: 162px 64px;
+        position: relative;
+    }
+
+    & &__form- {
+        margin-top: 48px;
+    }
+
+
+    & &__label {
+        position: absolute;
+        margin-top: 12px;
+        left: 90px;
+        color: var(--color-light-grey);
+        transform-origin: 0 0;
+        transform: translate3d(0,0,0);
+        transition: all .2s ease;
+        letter-spacing: -0.03em;
+    }
+
+    & input {  
+        box-sizing: border-box;
+        width: 100%;
+        height: 56px;
+        border: 1px solid var(--color-light-grey);
+        border-radius: 18px;
+        margin-bottom: 14px;
+        padding: 20px 24px 0;
+
+        &:hover {  
+            border: 1px solid var(--color-grey);
+        }
+
+        &:hover + .home-page__label {  
+            color: var(--color-grey);
+        }
+
+        &:focus-visible {  
+            border: 1px solid var(--color-on-surface);
+            outline: none;
+        }
+          
+        &:not(:placeholder-shown)  + .home-page__label {
+            transform: translate3d(0,-6px,0) scale(.75);
+            color: var(--color-grey);
+        }
+
+        &:focus  + .home-page__label {
+            color: var(--color-grey);
+            transform: translate3d(0,-6px,0) scale(.75);
+        }
+    }
+
+    & &__inputs-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 18px;
+
+        & label:nth-child(1) {
+            width: 59.3%;
+            margin-right: 14px;
+        }
+
+        & label:nth-child(2) {
+            width: 59.3%;
+
+            & .home-page__label {  
+                left: 315px;
+            }
+        }
+    }
+    
+    & &__button {
+        padding: 20px 40px;
+        width: 100%;
+        height: 56px;
+        background: var(--color-primary);
+        border-radius: 18px;
+        border: none;
+        color: var(--color-white);
+
+        &:hover {
+            background-color: var(--color-primary-light);
+        }
+    }
+}
