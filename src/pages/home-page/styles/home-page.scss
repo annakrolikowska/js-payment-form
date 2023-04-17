@@ -17,6 +17,7 @@
     & &__form-container {
         padding: 162px 64px;
         position: relative;
+        max-width: 440px;
     }
 
     & &__form {
@@ -98,5 +99,40 @@
         &:hover {
             background-color: var(--color-primary-light);
         }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      & &__logo {
+        top: 48px;
+        padding: 0;
+        transform: translateX(-50%);
+    }
+
+    & h2 {
+        text-align: center;
+    }
+
+    & &__form-container {
+        padding: 100px 64px;
+    }
+
+    & &__img-container {
+        min-width: 1025px;
+        text-align: center;
+        background-color: #F8FAFF;
+    }
+
+    & &__img {
+        width: 644px;
+        height: 592px;
+        margin-top: -10px;
+    }
+
+    & &__form-container {
+        padding: 53px 64px;
     }
 }
