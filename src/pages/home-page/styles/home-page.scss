@@ -1,9 +1,17 @@
 .home-page {
+
+    --padding-form-mobile: 15px 17px;
+    --padding-form-tablet: 53px 64px;
+    --padding-form-desktop: 162px 64px;
+
+    --heading-large: 40px;
+    --heading-small: 24px;
+
     display: flex;
     flex-direction: row;
 
     & h2 {
-        font-size: 40px;
+        font-size: var(--heading-large);
         font-weight: 600;
         line-height: 110%;
         letter-spacing: -0.03em;
@@ -24,7 +32,7 @@
     }
 
     & &__form-container {
-        padding: 162px 64px;
+        padding: var(--padding-form-desktop);
         position: relative;
         max-width: 440px;
     }
@@ -143,7 +151,7 @@
         }
 
         & &__form-container {
-            padding: 53px 64px;
+            padding: var(--padding-form-tablet);
         }  
     }
 
@@ -155,11 +163,11 @@
     
         & h2 {
             text-align: left;
-            font-size: 24px;
+            font-size: var(--heading-small);
         }
 
         & &__form-container {
-            padding: 15px 17px;
+            padding: var(--padding-form-mobile);
         }
 
         & &__img-container {
