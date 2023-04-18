@@ -5,4 +5,5 @@ export default {
     css: {
         devSourcemap: true,
     },
+    base: '/js-payment-form/'
 }
