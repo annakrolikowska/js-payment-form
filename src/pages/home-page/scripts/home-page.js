@@ -18,10 +18,8 @@ inputs.forEach(input => {
   input.addEventListener('change', () => {
     if (validateInputs()) {
       submitBtn.disabled = false;
-      console.log('kitek')
     } else {
       submitBtn.disabled = true;
-      console.log('pawcio')
     }
   });
 });
