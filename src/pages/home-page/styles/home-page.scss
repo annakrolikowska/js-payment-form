@@ -122,6 +122,7 @@
 
         &:disabled {
             background-color: var(--color-default);
+            cursor: default;
         }
     }
 
