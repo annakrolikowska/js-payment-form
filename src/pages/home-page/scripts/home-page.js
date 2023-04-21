@@ -1,4 +1,5 @@
 import '../styles/home-page.scss'
+import '../styles/components/form.scss'
 
 const form = document.querySelector('.home-page__form');
 const submitBtn = form.querySelector('.home-page__button');
