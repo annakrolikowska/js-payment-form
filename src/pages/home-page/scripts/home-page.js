@@ -1,8 +1,8 @@
 import '../styles/home-page.scss'
 import '../styles/components/form.scss'
 
-const form = document.querySelector('.home-page__form');
-const submitBtn = form.querySelector('.home-page__button');
+const form = document.querySelector('.form-component');
+const submitBtn = form.querySelector('.form-component__button');
 const inputs = form.querySelectorAll('input');
 
 function validateInputs() {
