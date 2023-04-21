@@ -8,3 +8,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+@media (min-width: 1300px) {
+  body {
+    background: linear-gradient(90deg, white 42%, var(--color-background) 35%);
+  }
+}
