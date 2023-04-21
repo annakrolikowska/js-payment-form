@@ -1,37 +1,25 @@
-# INVO Academy JS Starter with Vite
+## :art: Figma design to code |  Payment informaton form
 
-In order to see this file in preview mode in VS Code, press ```Ctrl + Shift + V```
+ <img src="https://i.ibb.co/J5Td10m/Mokap2.png" title="mockup" alt="mockup" width="900"/>
+ 
+ ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+ ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/)
+ [---> check out the live project](https://annakrolikowska.github.io/js-payment-form/)
 
-## How to start your challenge
+Simple project coded to improve my skills in **SCSS** and **Vanilla Javascript**, and correct mapping of design from **Figma** to code.
 
-This is a Universal Starter for all the Basic INVO Academy Challenges. In order to start your challenge, remove all the content inside ```<div id="home-page"></div>``` and start coding :) 
+  - The form is designed to ensure all fields are filled, and the credit card number meets the requirements for credit card number validators. The form is validated after each character input.
 
-The main file structure is prepered, please make yourslef familiar with it. Your goal is to explore it and extend on your own while development. Feel free to remove all the extra files and code that you don't need.
+  - To proceed, the "Next step" button should only be active in the case of a properly validated form. If the user clicks the active "Next step" button, a standard "Success" alert should appear.
 
-## How to run your project
+  - This project is designed to be displayed correctly on all types of devices. 
 
-If you run your this project for the first time, you need to install npm dependencies by typing
+&nbsp;
 
-```npm install``` (this is for the one-time installation only)
-
-In order to run your project in a development mode type
-
-```npm run dev```
-
-then open your browser and go to the url showed in the terminal. That's it, if you make any changes in the code, browser will synchronize automatically.
-
-## Building your project
-
-When you are ready to put your project on the Internet, you need to build it. For building, type
-
-```npm run build```
-
-This commend will create a dist folder. This is the folder containing your whole application and that's the only folder that you need to deploy to the server in order to make your app publically available.
-
-## More informations about folder structure and deploying your application you can find inside INVO Academy Knowledge Base
+:mailbox: Feel free to contact me:
+ krolikowska.ann@gmail.com     
 
 
